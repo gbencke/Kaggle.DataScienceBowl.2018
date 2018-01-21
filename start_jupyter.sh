@@ -2,6 +2,7 @@
 
 cd notebooks
 
-jupyter notebook --ip="*"
+jupyter notebook --ip="*" --no-browser
+
 
 
