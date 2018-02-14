@@ -2,3 +2,7 @@ env/
 data/
 .ipynb_checkpoints/
 *.7z
+logs/
+utils/
+data.old.test/
+
