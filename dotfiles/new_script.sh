@@ -7,7 +7,7 @@ sudo apt-get install -y p7zip-full htop vim mc tig git make gcc curl tmux wget p
 sudo apt-get install -y ncurses-dev tree python-dev nano dos2unix bc libhdf5-dev    
 sudo apt-get install -y python3 python3-pip python3-dev cmake graphviz python-h5py
 
-sudo apt-get install language-pack-en-base 
+sudo apt-get install -y language-pack-en-base 
 sudo dpkg-reconfigure locales
 
 
@@ -17,8 +17,11 @@ cd git
 sudo pip install autopep8 pylint virtualenv pmm
 sudo pip3 install autopep8 pylint virtualenv pmm
 
-wget https://s3.amazonaws.com/gbencke.kaggle/data.kaggle.bowl.7z
+
+# CUDA RUNTIME FOR GPU VMs - chmod 755 and run the file below
+wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run  
 
 
 
-
+# CUDA RUNTIME FOR GPU VMs - Cuda Devel - unzip and run the .deb files with dpkg -i 
+wget https://s3.amazonaws.com/gbencke.kaggle/backup.7z   
