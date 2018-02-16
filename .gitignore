@@ -5,4 +5,5 @@ data/
 logs/
 utils/
 data.old.test/
+tmp/
 
