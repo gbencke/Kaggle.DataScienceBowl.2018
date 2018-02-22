@@ -14,6 +14,9 @@ sudo dpkg-reconfigure locales
 mkdir git
 cd git
 
+git config --global user.email "gbencke@benckesoftware.com.br"  
+git config --global user.name "Guilherme Bencke"  
+
 sudo pip install autopep8 pylint virtualenv pmm
 sudo pip3 install autopep8 pylint virtualenv pmm
 
