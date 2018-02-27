@@ -20,11 +20,9 @@ git config --global user.name "Guilherme Bencke"
 sudo pip install autopep8 pylint virtualenv pmm
 sudo pip3 install autopep8 pylint virtualenv pmm
 
-
-# CUDA RUNTIME FOR GPU VMs - chmod 755 and run the file below
-wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run  
-
-
-
-# CUDA RUNTIME FOR GPU VMs - Cuda Devel - unzip and run the .deb files with dpkg -i 
-wget https://s3.amazonaws.com/gbencke.kaggle/backup.7z   
+if [[ -z "${USE_CUDA}" ]]; then
+        # CUDA RUNTIME FOR GPU VMs - chmod 755 and run the file below
+        wget https://developer.nvidia.com/compute/cuda/9.0/Prod/local_installers/cuda_9.0.176_384.81_linux-run  
+        # CUDA RUNTIME FOR GPU VMs - Cuda Devel - unzip and run the .deb files with dpkg -i 
+        wget https://s3.amazonaws.com/gbencke.kaggle/backup.7z   
+fi
